@@ -1,7 +1,7 @@
 
 /************		SAMPLE CODE FOR RPI PICO I2C0		***********
  * 					-----------------------------
- * **********			BME680 TEMPERATURE SENSOR		***********
+ * **********		  BME680 TEMPERATURE SENSOR		***********
  * 
  * Editor : Shalu Prakasia
  * 
