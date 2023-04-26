@@ -148,7 +148,7 @@ void main(void)
             }
             else{
                 // printk("\nXLSB = %d \t LSB = %d \t MSB = %d", buffer[16], buffer[15], buffer[14]);
-                printk("\nHUM_MSB = %d \tHUM_LSB = %d",buffer[17], buffer[18]);
+                // printk("\nHUM_MSB = %d \tHUM_LSB = %d",buffer[17], buffer[18]);
             }
 /*******               (xlsb (7 to 4 bits hence right shift))    ***************/ 
             adc_temp = (((int32_t)buffer[16])>>4) | (((int32_t)buffer[15])<<4) | (((int32_t)buffer[14])<<12);
@@ -187,7 +187,7 @@ void main(void)
         ret = i2c_reg_write_byte(dev, BME680_ADDR, BME680_CTRL_MEAS, TEMP_ENABLE);
         if(ret<0){
             printk("\nError!! ");
-            // return;
+            return;
         }
     }
 }
